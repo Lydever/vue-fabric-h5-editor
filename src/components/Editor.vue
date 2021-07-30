@@ -10,16 +10,19 @@
         </div>
         <el-form inline="inline" style="float: right; width: 1000px" >
           <el-button
-            class="el-icon-plus btn_style" style="width: 140px"
-            @click="addTextHandle('textbox', 'add')"
+              class="el-icon-plus btn_style" style="width: 140px"
+              @click="addTextHandle('textbox', 'add')"
           > 添加文本框
           </el-button>
           <el-button class="el-icon-plus btn_style" @click="imgDraw" >
-            <input type="file" accept="image/*" style="display:none" id="uploadfile" @change="uploadFile" />
+            <input type="file" accept="image/*" 
+                style="display:none" 
+                id="uploadfile" 
+                @change="uploadFile" />
             上传图片
           </el-button>
           <el-button class="el-icon-edit btn_style"
-                     @click="initD"
+              @click="initD"
           >   绘 制 </el-button>
           <el-button
             class="btn-delete btn_style el-icon-delete"
@@ -43,11 +46,17 @@
           <el-form ref="form" >
             <el-form-item label="文本内容：">
               <div id="textBox"  style="width: 100% ">
-                <el-input type="textarea" @input="changeText" @focus="changeText" id="in" ref="in" v-model="msg" ></el-input>
+                <el-input type="textarea" 
+                    @input="changeText" 
+                    @focus="changeText" 
+                    id="in" ref="in" 
+                    v-model="msg" ></el-input>
               </div>
             </el-form-item>
             <el-form-item label="字体：" label-width="82px">
-              <el-select  v-model="fontFamilies.value" placeholder="请选择字体" @change="changeFontFamily">
+              <el-select  v-model="fontFamilies.value" 
+                  placeholder="请选择字体" 
+                  @change="changeFontFamily">
                 <el-option
                   v-for="item in fontFamilies"
                   :key="item.value"
@@ -57,8 +66,9 @@
               </el-select>
             </el-form-item>
             <el-form-item label="字体颜色：" >
-              <el-select v-model="fontColor.value" placeholder="请选择字体颜色"
-                         @change="changeFontColor"
+              <el-select v-model="fontColor.value" 
+              placeholder="请选择字体颜色"
+                  @change="changeFontColor"
               >
                 <el-option
                   v-for="item in fontColor"
@@ -69,8 +79,9 @@
               </el-select>
             </el-form-item>
             <el-form-item label="字体粗细：" >
-              <el-select v-model="fontWeight.value" placeholder="请选择字体粗细"
-                         @change="changefontWeight"
+              <el-select v-model="fontWeight.value" 
+              placeholder="请选择字体粗细"
+                  @change="changefontWeight"
               >
                 <el-option
                   v-for="item in fontWeight"
@@ -81,8 +92,9 @@
               </el-select>
             </el-form-item>
             <el-form-item label="字体风格：" >
-              <el-select v-model="fontStyle.value" placeholder="请选择字体风格"
-                         @change="changeFontStyle">
+              <el-select v-model="fontStyle.value" 
+              placeholder="请选择字体风格"
+                  @change="changeFontStyle">
                 <el-option
                   v-for="item in fontStyle"
                   :key="item.value"
@@ -92,7 +104,9 @@
               </el-select>
             </el-form-item>
             <el-form-item label="字体大小：" >
-              <el-select v-model="fontSizes.value" placeholder="选择字体大小"  @change="changeFontSize">
+              <el-select v-model="fontSizes.value" 
+              placeholder="选择字体大小"  
+                  @change="changeFontSize">
                 <el-option
                   v-for="item in fontSizes"
                   :key="item.value"
@@ -102,7 +116,9 @@
               </el-select>
             </el-form-item>
             <el-form-item label="对齐方式：" >
-              <el-select v-model="textAlign.value" @change="changeTextAlign" placeholder="选择对齐方式">
+              <el-select v-model="textAlign.value" 
+                  @change="changeTextAlign" 
+                  placeholder="选择对齐方式">
                 <el-option
                   v-for="item in textAlign"
                   :key="item.value"
