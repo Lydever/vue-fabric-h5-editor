@@ -9,8 +9,7 @@
 
 # 技术选型
 - Vue3
-- Vue-CLI4
-- Element-UI-puls
+- Element-puls
 - Fabricjs
 
 # 功能说明
