@@ -5,8 +5,8 @@
         style="background: #6A60E3"
         mode="horizontal"
       >
-        <div style="width: 400px; float: left;height:70px;line-height: 70px;color: #fff; background: #5951B6;text-align: center">
-          <h1>{{ templatesTitle }}</h1>
+        <div style="width: 400px; float: left;height:70px;color: #fff; background: #5951B6;">
+          <h1 style="text-align: center">{{ templatesTitle }}</h1>
         </div>
         <el-form inline="inline" style="float: right; width: 1000px" >
           <el-button
@@ -876,14 +876,6 @@
     font-size: 14px;
     border-radius: 4px;
     color: #fff;
-  }
-
-  ul li {
-    float: left;
-    width: 100px;
-    height: 50px;
-    list-style: none;
-    margin: 15px;
   }
 
 </style>
