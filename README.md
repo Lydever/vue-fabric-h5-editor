@@ -9,8 +9,9 @@
 
 # 技术选型
 - Vue3
-- Element-puls
-- Fabricjs
+- Element-plus
+- Fabric.js
+- ES6
 
 # 功能说明
 
