@@ -5,6 +5,10 @@
 ![github](https://img.shields.io/badge/fabric-4.5.1-green.svg)
 
 # 效果预览
+
+运行效果：
+![1627714699](https://user-images.githubusercontent.com/65069676/127731794-906b582f-f1a2-4e24-90d5-278541159b55.jpg)
+编辑效果：
 ![图片](https://user-images.githubusercontent.com/65069676/127619465-7271e5f1-fa24-49d9-a1c7-73c4dd83ede0.png)
 
 # 技术选型
